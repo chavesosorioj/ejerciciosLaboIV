@@ -1,0 +1,41 @@
+<!--
+    una aplicacion que se le ingresen dos edades en dos cuadro de textos
+edadUno, EdadDos
+mostrar el promedio y la suma en dos cuadros de textos nuevos
+botones "calcular" y "limpiar cuadros de textos"
+-->
+<div>
+    <h3>Ingrese dos edades</h3>
+<input [type]="miTipo" [(ngModel)]="calc.numero1" >
+<input [type]="miTipo" [(ngModel)]="calc.numero2" >
+<br>
+<input type="button" (click)=" calc.sumar();calc.promedio()" value="calcular"> 
+<br>
+<br>
+<label>PROMEDIO = {{calc.resP}}</label> 
+<br>
+<br>
+<label>SUMA = {{calc.resS}}</label>
+<br>
+<input type="button" (click)="limpiarCampos()" value="Limpiar cuadro de textos"> 
+<br>
+</div>
+
+<!--                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    ejercicio anterior
+    <input [type]="miTipo" [(ngModel)]="title" >
+<input type="button" (click)="mostrarAlert()" value="cambiar"> 
+<br>
+<br>
+<input [type]="miTipo" [(ngModel)]="miSuma.numero1" >
+<input [type]="miTipo" [(ngModel)]="miSuma.numero2" >
+<br>
+<br>
+<input [type]="miTipo" (click)="miSuma.sumar()" value="sumar">
+<input [type]="miTipo" [(ngModel)]="miSuma.resultado" >
+<br>
+<br>
+
+-->
+
+<app-padre></app-padre>
